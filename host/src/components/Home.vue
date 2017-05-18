@@ -1,7 +1,9 @@
 <template>
     <div>
-        foo
-        {{bdata}}
+        this is my homepage
+        <ol>
+            <li>等待建设</li>
+        </ol>
     </div>
 </template>
 
@@ -19,12 +21,10 @@ export default {
             }
         }
         this.$http.jsonp('http://127.0.0.1:9090/chat',data).then(res=>{
-            console.log(res)
-            this.bdata=res.body
+            console.log('jsonp success')
         },res=>{
-            this.bdata='error'
+            console.log('jsonp fail')
         })
-        console.log(123)
     }
 }
 </script>

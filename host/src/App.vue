@@ -1,23 +1,54 @@
 <template>
-  <div id="app">
-    <!--<img src="./assets/logo.png">-->
-    <router-view></router-view>
+  <div id="app" :style="{height:app_height+'px'}">
+    <div>
+      <router-view></router-view>
+    </div>
+    <music></music>
   </div>
 </template>
 
 <script>
+import music from '@/components/Music'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    music
+  },
+  data () {
+    return {
+      app_height:window.innerHeight
+    }
+  },
+  watch: {
+    app_height:(new_height)=>{
+      this.app_height=new_height
+    }
+  },
+  created() {
+    
+  },
+  mounted () {
+    const that=this
+    window.onresize=()=>{
+      return(()=>{
+        that.app_height=window.innerHeight
+      })()
+    }
+  },
+  methods: {
+  }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body{
+  margin: 0;
 }
 </style>
