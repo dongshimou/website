@@ -1,34 +1,33 @@
 <template>
-    <div>
-        this is my homepage
-        <ol>
-            <li>等待建设</li>
-        </ol>
+    <div id="home">
+        <div style="width:30%;">
+            <ol>
+                <li v-for="item in todo">{{item.label}}</li>
+            </ol>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    data () {
+    data() {
         return {
-            bdata:1
+            todo:[
+                {'label':'下班'},
+                {'label':'打游戏'},
+                {'label':'写web'},
+                {'label':'等待建设'}
+            ]
         }
     },
-    created () {
-        let data={
-            'params':{
-                'code':'000001'
-            }
-        }
-        this.$http.jsonp('http://127.0.0.1:9090/chat',data).then(res=>{
-            console.log('jsonp success')
-        },res=>{
-            console.log('jsonp fail')
-        })
-    }
+
 }
 </script>
 
 <style>
-
+#home {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 </style>
