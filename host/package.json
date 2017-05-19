@@ -8,7 +8,7 @@
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "release":"node build/build.js && git add . && git commit --allow-empty-message -q && git push origin master "
+    "release":"node build/build.js && git add . && git commit --allow-empty-message && git push origin master "
   },
   "dependencies": {
     "vue": "^2.2.6",
