@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <myhead >
+    <myhead>
       <div class="headclass">
         <router-link class="button-label" :to="{name:'Hello'}">
           hello
@@ -10,7 +10,7 @@
         </router-link>
       </div>
     </myhead>
-      <router-view></router-view>
+    <router-view></router-view>
     <music></music>
   </div>
 </template>
@@ -37,14 +37,13 @@ export default {
 </script>
 <style scoped>
 
-
-
 </style>
 <style>
 #app {
-  font-family: 'Arial','Microsoft YaHei';
+  font-family: 'Arial', 'Microsoft YaHei';
   overflow: auto;
 }
+
 .headclass {
   background-color: rgba(0, 0, 0, 0.8);
   /*border: 2px solid #66ccff;*/
@@ -52,6 +51,7 @@ export default {
   display: flex;
   justify-content: center;
 }
+
 body {
   margin: 0;
   width: 100%;
@@ -62,16 +62,26 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
 .button-label {
   min-width: 100px;
-  margin:5px;
+  margin: 5px;
   color: white;
   padding: 5px;
   /*border: 1px solid white;*/
   border-radius: 5px;
   box-shadow: 0px 0px 1em #fff;
 }
+
+.button-label:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.3s;
+}
+
 a {
   text-decoration: none;
+}
+*:focus {
+    outline: none;
 }
 </style>

@@ -26,6 +26,8 @@ export default {
     mounted() {
         const that = this
         that.$el.firstElementChild.volume = 0.5
+        that.$el.style.position = 'fixed'
+        document.body.style.marginBottom = that.$el.clientHeight + 'px';
     }
 }
 </script>
@@ -37,7 +39,6 @@ audio {
 
 .fix_bottom {
     width: 100%;
-    position: fixed;
     bottom: 0px;
     display: grid;
 }
