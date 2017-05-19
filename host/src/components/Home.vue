@@ -2,7 +2,7 @@
     <div id="home">
         <div style="width:30%;">
             <ol>
-                <li v-for="item in todo">{{item.label}}</li>
+                <li v-for="item in todo">{{item}}</li>
             </ol>
         </div>
     </div>
@@ -12,11 +12,11 @@
 export default {
     data() {
         return {
-            todo:[
-                {'label':'下班'},
-                {'label':'打游戏'},
-                {'label':'写web'},
-                {'label':'等待建设'}
+            todo: [
+                '下班',
+                '打游戏',
+                '写web',
+                '等待建设'
             ]
         }
     },

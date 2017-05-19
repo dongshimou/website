@@ -11,18 +11,17 @@ export default {
     data() {
         return {
             music_list: [
-                {
-                    name: '小时姑娘 - 爱殇.mp3'
-                }
+                '小时姑娘-爱殇.mp3'
             ],
             src: ''
         }
     },
     created() {
         let address = './music/'
-        let src = address + this.music_list[0].name
-        console.log(src)
-        this.src = src
+        let src = address + this.music_list[0]
+        this.src = src;
+        console.log(this.src)
+
     },
     mounted() {
         const that = this

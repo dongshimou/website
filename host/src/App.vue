@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <myhead></myhead>
+    <myhead class="headclass">
+      <h1>this is my home page</h1>
+    </myhead>
     <div>
       <router-view></router-view>
+      <!--<img src='./assets/kunkka-wallpaper-hd.jpg'>-->
     </div>
-    <div style="height:500px;;background-color:#66ccff;"></div>
-    <div style="height:500px;background-color:#ffcc66;"></div>
+    <div style="height:1500px;background-color:rgba(255,200,100,0.3);"></div>
     <music></music>
   </div>
 </template>
@@ -30,7 +32,13 @@ export default {
   }
 }
 </script>
-
+<style scoped>
+.headclass{
+  background-color:rgba(100, 205, 200,0.5);
+  border: 2px solid #66ccff;
+  border-radius:10vh;
+}
+</style>
 <style>
 #app {
   font-family: 'Microsoft YaHei';
@@ -40,5 +48,11 @@ export default {
 body {
   margin: 0;
   width: 100%;
+  background-image: url('../src/assets/kunkka-wallpaper-hd.jpg');
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 </style>
