@@ -42,6 +42,7 @@ export default {
     /*display: flex;*/
     /*flex-direction: column;*/
     /*justify-content: center;*/
+    overflow-y: hidden;
 }
 </style>
 <style scoped>
@@ -57,6 +58,11 @@ p {
     /*border: 1px solid white;*/
     border-radius: 5px;
     box-shadow: 0px 0px 1em #000;
+}
+
+.label:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
 }
 </style>
 
