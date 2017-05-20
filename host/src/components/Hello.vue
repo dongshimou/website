@@ -1,31 +1,69 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <h2>Study Website</h2>
     <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+      <li v-for="item in Studyweb">
+        <a :href="item.a" target="_blank">{{item.name}}
+        </a> 
+      </li>
+      </ul>
+        <h2>Ecosystem</h2>
+        <ul>
+          <li v-for="item in Ecosystem">
+            <a :href="item.a" target="_blank">{{item.name}}
+            </a>
+          </li>
+        </ul>
   </div>
 </template>
 
 <script>
 export default {
   name: 'hello',
-  data () {
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to My Vue.js App',
+      Ecosystem: [
+        {
+          name: 'vue-router',
+          a: 'http://router.vuejs.org/'
+        }, {
+          name: 'vuex',
+          a: 'http://vuex.vuejs.org/'
+        }, {
+          name: 'vue-loader',
+          a: 'http://vue-loader.vuejs.org/'
+        }, {
+          name: 'awesome-vue',
+          a: 'https://github.com/vuejs/awesome-vue'
+        }
+      ],
+      Studyweb: [
+        {
+          name: 'MDN',
+          a: 'https://developer.mozilla.org/zh-CN/'
+        },
+        {
+          name:'W3C',
+          a:'https://www.w3schools.com'
+        },
+        {
+          name:'runjs',
+          a:'http://runjs.cn/code'
+        },{
+          name:'jsfiddle',
+          a:'https://jsfiddle.net/'
+        },
+        {
+          name:'stackvoerflow',
+          a:'https://stackoverflow.com'
+        },{
+          name:'github',
+          a:'https://github.com'
+        }
+      ]
+
     }
   }
 }
@@ -33,7 +71,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 
@@ -44,10 +83,17 @@ ul {
 
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 10px 10px;
 }
 
 a {
-  color: #42b983;
+  color: #000;
+  padding: 5px;
+  border-radius: 2px 5px;
+  box-shadow: 0px 0px 1em #000;
+}
+
+.hello {
+  text-align: center;
 }
 </style>

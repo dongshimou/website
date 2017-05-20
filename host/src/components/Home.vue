@@ -7,10 +7,10 @@
             <p v-for="item in todo">{{item}}</p>
         </div>
         <div style="max-width:30%;min-width:10%;display: inline-block;margin-top:5vh;">
-            <a href="http://fuckneusoft.com">
+            <a href="http://fuckneusoft.com" target="_blank">
                 <p class="label">don't touch me</p>
             </a>
-            <a href="http://sixrevisions.com/css/responsive-background-image/">
+            <a href="http://sixrevisions.com/css/responsive-background-image/" target="_blank">
                 <p class="label">
                     study mark
                 </p>
