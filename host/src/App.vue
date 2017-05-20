@@ -61,6 +61,9 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  /*背景颜色叠加*/
+  /*background-color: rgba(66, 200, 255, 0.6);*/
+  /*background-blend-mode:multiply;*/
 }
 
 .button-label {
