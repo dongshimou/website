@@ -1,5 +1,5 @@
 <template>
-    <div class="fix_bottom">
+    <div id="app_bottom" class="fix_bottom">
         <audio :src="src" autoplay controls loop>
         </audio>
     </div>

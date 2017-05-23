@@ -8,6 +8,9 @@
         <router-link class="button-label" :to="{name:'Home'}">
           home
         </router-link>
+        <router-link class="button-label" :to="{name:'Posts'}">
+          posts
+        </router-link>
       </div>
     </myhead>
     <router-view></router-view>
@@ -55,7 +58,7 @@ export default {
 body {
   margin: 0;
   width: 100%;
-  background-image: url('../src/assets/kunkka-wallpaper-hd.jpg');
+  background-image: url('./assets/kunkka-wallpaper-hd.jpg');
   background-clip: border-box;
   background-repeat: no-repeat;
   background-position: center center;

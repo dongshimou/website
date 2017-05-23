@@ -1,5 +1,5 @@
 <template>
-    <div id="head" class="fix_top">
+    <div id="app_top" class="fix_top">
         <slot></slot>
     </div>
 </template>
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style scoped>
-#head {
+#app_top {
     text-align: center;
 }
 </style>

@@ -4,6 +4,8 @@ import resource from 'vue-resource'
 
 import Hello from '@/components/Hello'
 import Home from '@/components/Home'
+import Posts from '@/components/Posts'
+import Post from '@/components/Post'
 
 Vue.use(resource)
 Vue.use(Router)
@@ -19,6 +21,16 @@ export default new Router({
       path: '/',
       name:'Home',
       component:Home
+    },
+    {
+      path:'/posts/:title',
+      name:'Post',
+      component:Post
+    },
+    {
+      path:'/posts',
+      name:'Posts',
+      component:Posts
     }
   ]
 })
