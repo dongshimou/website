@@ -18,11 +18,11 @@ export default {
         return {
             list: [
                 {
-                    "title": "失败的载入",
+                    "title": "载入失败",
                     "author": "skadi",
                     "date": "2017-01-01 00:00",
                     "tags": ["日常", "无聊"],
-                    "content": "\r\n\r\n如果你看到这个了,表明载入失败了\r\n\r\n如果你看到这个了,表明载入失败了\r\n\r\n如果你看到这个了,表明载入失败了\r\n\r\n如果你看到这个了,表明载入失败了\r\n\r\n如果你看到这个了,表明载入失败了\r\n\r\n如果你看到这个了,表明载入失败了\r\n\r\n如果你看到这个了,表明载入失败了",
+                    "content": "如果你看到这个了,表明载入失败了",
                     "iso8601Date": "2017-01-01T00:00:00+08:00",
                     "basename": "0"
                 }
@@ -33,7 +33,8 @@ export default {
         fetchData(para) {
             let address = para + '/list.json'
             this.$http.get(address).then(res => {
-                this.list = res.body.slice(-3)
+                this.list=res.body
+                console.log('无限载入,等待建设')
                 // console.log(res.body)
             }, res => {
                 // alert("network error");
@@ -61,7 +62,7 @@ export default {
 .post {
     width: 70vw;
     /*div 居中*/
-    margin: 10vw auto;
+    margin: 10vh auto;
 }
 
 a {

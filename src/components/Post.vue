@@ -19,11 +19,11 @@ export default {
   data() {
     return {
       post: {
-        "title": "一个无聊的日子里写的无聊日志",
+        "title": "载入失败",
         "author": "skadi",
         "date": "2017-01-01 00:00",
         "tags": ["c", "cpp", "javascript", "python", "csharp"],
-        "content": "<p>如果你看到了这个页面,表示载入json失败了.</p>",
+        "content": "<p>如果你看到了这个页面,表示载入页面失败了.</p>",
         "iso8601Date": "2017-01-01T00:00:00+08:00",
         "basename": "0"
       }
