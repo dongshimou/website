@@ -51,12 +51,14 @@ export default {
 <style scoped>
 #post {
   text-align: center;
-  margin: 10vh 5vw;
+  margin: 10vh auto;
 }
 
 .content {
   min-height: 50vh;
   text-align: left;
+  margin: 0 auto;
+  width: 60vw;
 }
 
 ul {
@@ -72,7 +74,10 @@ li {
   padding: 1px 5px;
   box-shadow: 0px 0px 1em #000;
 }
-
+h1{
+  max-width: 80vw;
+  margin: 0 auto;
+}
 h3 {
   margin: 0px;
 }

@@ -17,7 +17,7 @@ export default {
         }
     },
     created() {
-        let address = './music/'
+        let address = 'static/music/'
         let src = address + this.music_list[0]
         this.src = src;
         console.log(this.src)

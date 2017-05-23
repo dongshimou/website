@@ -70,7 +70,7 @@ body {
 }
 
 .button-label {
-  min-width: 100px;
+  min-width: 80px;
   margin: 5px;
   color: white;
   padding: 5px;
