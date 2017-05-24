@@ -6,6 +6,7 @@ import Hello from '@/components/Hello'
 import Home from '@/components/Home'
 import Posts from '@/components/Posts'
 import Post from '@/components/Post'
+import Resume from '@/components/Resume'
 
 Vue.use(resource)
 Vue.use(Router)
@@ -23,14 +24,19 @@ export default new Router({
       component:Home
     },
     {
-      path:'/posts/:title',
+      path:'/static/posts/:basename',
       name:'Post',
       component:Post
     },
     {
-      path:'/posts',
+      path:'/static/posts',
       name:'Posts',
       component:Posts
+    },
+    {
+      path:'/static/resume',
+      name:'Resume',
+      component:Resume
     }
   ]
 })

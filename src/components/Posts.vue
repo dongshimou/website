@@ -1,14 +1,13 @@
 <template>
     <div id="posts">
-        <div class="post" v-for="item in list">
-            <router-link :to="{name:'Post',params:{title:item.basename}}">
+        <div class="post" v-for="item in this.list">
+            <router-link :to="{name:'Post',params:{basename:item.basename}}">
                 <h3>{{item.title}}</h3>
                 <h5>{{item.author}}</h5>
                 <h5>{{item.date}}</h5>
                 <div v-text="item.content"></div>
             </router-link>
         </div>
-    
     </div>
 </template>
 
@@ -34,12 +33,12 @@ export default {
             let address = para + '/list.json'
             this.$http.get(address).then(res => {
                 this.list=res.body
-                console.log('无限载入,等待建设')
+                // console.log(this.list)
                 // console.log(res.body)
             }, res => {
                 // alert("network error");
                 // console.log('error',res)
-                console.log('nerwork error')
+                console.log('get posts list nerwork error')
             })
         }
     },

@@ -24,7 +24,7 @@ var list = function(filePaths) {
     arr.sort((a,b)=>{
         return a.date<b.date;
     })
-    fs.writeFile(`dist/posts/list.json`, JSON.stringify(arr));
+    fs.writeFile(`static/posts/list.json`, JSON.stringify(arr));
 };
 var posts = function(filenames) {
     var filePaths = [];
@@ -39,15 +39,15 @@ var posts = function(filenames) {
         results = JSON.parse(results);
         results = results[filename.replace('.md', '')];
         results.content = markdown.toHTML(results.content);
-        fs.writeFile(`dist/posts/${filename.replace('.md', '.json')}`, JSON.stringify(results));
+        fs.writeFile(`static/posts/${filename.replace('.md', '.json')}`, JSON.stringify(results));
         filePaths.push(`posts/${filename}`);
     }
     return filePaths;
 };
 var create = function(basePath) {
     var filenames = fs.readdirSync(basePath);
-    if (!fs.existsSync('dist/posts')) {
-        fs.mkdirSync('dist/posts');
+    if (!fs.existsSync('static/posts')) {
+        fs.mkdirSync('static/posts');
     }
     var filePaths = posts(filenames);
     list(filePaths);

@@ -35,10 +35,11 @@ export default {
       this.$http.get(address).then(res => {
         this.post = res.body
         // console.log(res.body)
+        console.log(this.post)
       }, res => {
         // alert("network error");
         // console.log('error',res)
-        console.log('nerwork error')
+        console.log('get post nerwork error')
       })
     }
   },

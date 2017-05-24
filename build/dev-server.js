@@ -1,5 +1,6 @@
 require('./check-versions')()
-require('./create-json')('./posts')
+require('./create-posts')('./posts')
+require('./create-resume')('./resume')
 
 var config = require('../config')
 if (!process.env.NODE_ENV) {

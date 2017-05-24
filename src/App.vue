@@ -2,14 +2,17 @@
   <div id="app">
     <myhead>
       <div class="headclass">
-        <router-link class="button-label" :to="{name:'Hello'}">
+        <!--<router-link class="button-label" :to="{name:'Hello'}">
           hello
-        </router-link>
+        </router-link>-->
         <router-link class="button-label" :to="{name:'Home'}">
           home
         </router-link>
         <router-link class="button-label" :to="{name:'Posts'}">
           posts
+        </router-link>
+        <router-link class="button-label" :to="{name:'Resume'}">
+          about
         </router-link>
       </div>
     </myhead>
