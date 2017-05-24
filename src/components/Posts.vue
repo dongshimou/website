@@ -5,7 +5,7 @@
                 <h3>{{item.title}}</h3>
                 <h5>{{item.author}}</h5>
                 <h5>{{item.date}}</h5>
-                <div v-text="item.content"></div>
+                <div class="content" v-text="item.content"></div>
             </router-link>
         </div>
     </div>
@@ -32,7 +32,7 @@ export default {
         fetchData(para) {
             let address = para + '/list.json'
             this.$http.get(address).then(res => {
-                this.list=res.body
+                this.list = res.body
                 // console.log(this.list)
                 // console.log(res.body)
             }, res => {
@@ -53,15 +53,21 @@ export default {
 #posts {
     text-align: center;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     flex-direction: column;
-    
 }
 
 .post {
     width: 70vw;
     /*div 居中*/
-    margin: 10vh auto;
+    margin: 5vh auto;
+}
+
+.content {
+    /*min-width: 50vw;*/
+    min-width: 40vw 300px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 a {
@@ -72,6 +78,11 @@ h5,
 h3 {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+h3 {
+    color: goldenrod;
+    text-shadow: 0px 0px 1em #000;
 }
 </style>
 <style>
