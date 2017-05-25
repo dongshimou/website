@@ -1,7 +1,7 @@
 <template>
     <div id="resume">
-        <p>还在建设中</p>
-        {{resume}}
+        <div class="content" v-html="resume.content">
+        </div>
     </div>
 </template>
 
@@ -41,4 +41,24 @@ export default {
     text-align: center;
     margin: 5vh auto;
 }
+
+.content {
+    min-height: 70vh;
+    max-width: 60vw;
+    text-align: left;
+    margin: 0 auto;
+}
 </style>
+<style>
+.content a {
+    color: yellow;
+}
+.content code{
+    color:indianred;
+}
+.content>h1 {
+    border-radius: 5px;
+    box-shadow: 0px 0px 1em #000;
+}
+</style>
+
