@@ -56,7 +56,7 @@ tags:
 * 会c/c++,写过c#,python和javascript.不过写前端的时候用javascript大概是面向Stackoverflow编程.
 * 喜欢`clang++ -std=c++1z`,看过`effective mordern cpp`,翻译过一本短小的gitbook[cpp best practices](http://fuckneusoft.com/topic/11/cpp-best-practices-%E8%AF%91%E6%96%87-%E4%B8%80),看过[c++并发编程](https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details).
 * 数据库:sql的用过mysql和sqlserver,nosql的用过mongo,redis
-* 以前写过[csdn](http://blog.csdn.net/dongshimou),后来自己弄了个网站加域名,可惜年费过了忘了付费东西没了.现在弄在我的[github.io](https://dongshimou.github.io)下,暂时还没弄好resume的页面组件,只把home和posts弄好了.
+* 以前做acm的题解写过[csdn](http://blog.csdn.net/dongshimou),后来自己弄了个网站加域名,可惜年费过了忘了付费东西没了.现在弄在我的[github.io](https://dongshimou.github.io)下,暂时还没弄好resume的页面组件,直接贴的content.
 * 版本管理用过git~~source tree大法好~~和svn.
-* linux使用没问题,毕竟科学上网要自己搭建ssserver.以及libc++目前并不支持windows
+* linux会用,但是并不是很熟练,只是因为科学上网要自己搭建ssserver,某些lib不支持win啊...等等一些需求.
 ---
