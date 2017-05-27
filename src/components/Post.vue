@@ -55,6 +55,7 @@ export default {
   margin: 10vh auto;
 }
 
+
 .content {
   min-height: 50vh;
   text-align: left;
@@ -75,11 +76,23 @@ li {
   padding: 1px 5px;
   box-shadow: 0px 0px 1em #000;
 }
-h1{
+
+h1 {
   max-width: 80vw;
   margin: 0 auto;
 }
+
 h3 {
   margin: 0px;
 }
 </style>
+<style>
+blockquote {
+  /*background-color: rgba(100, 100, 100, 0.5);*/
+  display: block;
+  border-left: 6px solid #b4b4b4;
+  padding-left: 10px;
+  margin: 5px 0px 5px 20px;
+}
+</style>
+

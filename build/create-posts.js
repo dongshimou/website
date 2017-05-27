@@ -3,6 +3,11 @@ var path = require('path');
 var m2j = require('markdown-to-json');
 // var markdown = require('markdown').markdown;
 var showdown = require('showdown')
+showdown.setOption('parseImgDimensions',true)
+showdown.setOption('strikethrough',true)
+showdown.setOption('ghCodeBlocks',true)
+showdown.setOption('tasklists',true)
+showdown.setOption('openLinksInNewWindow',true)
 var converter = new showdown.Converter()
 
 var list = function(filePaths) {

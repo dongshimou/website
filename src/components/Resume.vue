@@ -54,7 +54,7 @@ export default {
     color: yellow;
 }
 .content code{
-    color:indianred;
+    color:orangered;
 }
 .content>h1 {
     border-radius: 5px;

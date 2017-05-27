@@ -3,8 +3,8 @@
     <myhead>
       <div class="headclass">
         <!--<router-link class="button-label" :to="{name:'Hello'}">
-          hello
-        </router-link>-->
+            hello
+          </router-link>-->
         <router-link class="button-label" :to="{name:'Home'}">
           home
         </router-link>
@@ -67,8 +67,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
   /*背景颜色叠加*/
-  /*background-color: rgba(66, 200, 255, 0.6);*/
-  /*background-blend-mode:multiply;*/
+  /*background-color: rgba(66, 200, 255, 0.4);*/
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
 }
 
 .button-label {
@@ -89,7 +90,13 @@ body {
 a {
   text-decoration: none;
 }
+
 *:focus {
-    outline: none;
+  outline: none;
+}
+
+*,
+:after :before {
+  box-sizing: border-box;
 }
 </style>
