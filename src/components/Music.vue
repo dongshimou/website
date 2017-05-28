@@ -1,6 +1,6 @@
 <template>
     <div id="app_bottom" class="fix_bottom">
-        <audio :src="src" autoplay controls loop>
+        <audio ref="audio" autoplay controls :src="src" @ended="next">
         </audio>
     </div>
 </template>
@@ -10,18 +10,32 @@ export default {
     name: 'music',
     data() {
         return {
-            music_list: [
-                '小时姑娘-爱殇.mp3'
-            ],
-            src: ''
+            list: [],
+            src: '',
+            index: 0
+        }
+    },
+    methods: {
+        next: function () {
+            this.src = this.list[this.index];
+            this.index += 1;
+            if (this.index >= this.list.length)
+                this.index = 0;
         }
     },
     created() {
-        let address = 'static/music/'
-        let src = address + this.music_list[0]
-        this.src = src;
-        console.log(this.src)
-
+        let address = '/static/music/list.json'
+        console.log(address)
+        this.$http.get(address).then(res => {
+            this.list = res.body
+            // console.log(this.list)
+            // console.log(res.body)
+            this.next()
+        }, res => {
+            // alert("network error");
+            // console.log('error',res)
+            console.log('get music list nerwork error')
+        })
     },
     mounted() {
         const that = this

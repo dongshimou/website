@@ -16,8 +16,11 @@
         </router-link>
       </div>
     </myhead>
+    <!--导航-->
     <router-view></router-view>
+    <!--正文-->
     <music></music>
+    <!--音乐-->
   </div>
 </template>
 

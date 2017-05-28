@@ -7,6 +7,7 @@ import Home from '@/components/Home'
 import Posts from '@/components/Posts'
 import Post from '@/components/Post'
 import Resume from '@/components/Resume'
+import Http404 from '@/components/Http404'
 
 Vue.use(resource)
 Vue.use(Router)
@@ -38,6 +39,11 @@ export default new Router({
       path:'/static/resume',
       name:'Resume',
       component:Resume
+    },
+    {
+      path:'*',
+      name:'http404',
+      component:Http404
     }
   ]
 })

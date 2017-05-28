@@ -45,6 +45,7 @@ export default {
 .content {
     min-height: 70vh;
     max-width: 60vw;
+    min-width: 300px;
     text-align: left;
     margin: 0 auto;
 }
