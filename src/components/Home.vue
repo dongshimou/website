@@ -15,6 +15,11 @@
                     study mark
                 </p>
             </a>
+            <a href="http://www.shejidaren.com/30-css-hover-effects.html" target="_blank">
+                <p class="label">
+                    mouse hover
+                </p>
+            </a>
         </div>
     </div>
 </template>

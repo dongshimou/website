@@ -1,7 +1,7 @@
 <template>
     <div id="posts">
         <div class="post" v-for="item in this.list">
-            <router-link :to="{name:'Post',params:{basename:item.basename}}">
+            <router-link :to="{name:'Post',params:{id:item.basename}}">
                 <h3>{{item.title}}</h3>
                 <h5>{{item.author}}</h5>
                 <h5>{{item.date}}</h5>
@@ -58,16 +58,20 @@ export default {
 }
 
 .post {
-    width: 70vw;
+    min-width: 300px;
+    max-width: 60vw;
     /*div 居中*/
-    margin: 5vh auto;
+    margin: 4vh auto;
 }
 
 .content {
-    /*min-width: 50vw;*/
-    min-width: 40vw 300px;
-    max-width: 400px;
+    /*min-width: 300px;
+    max-width: 60vw;*/
     margin: 0 auto;
+    height: 15vh;
+    overflow: hidden;
+    word-break: break-word;
+    text-overflow: ellipsis;
 }
 
 a {

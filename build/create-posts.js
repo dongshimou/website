@@ -3,63 +3,67 @@ var path = require('path');
 var m2j = require('markdown-to-json');
 // var markdown = require('markdown').markdown;
 var showdown = require('showdown')
-showdown.setOption('parseImgDimensions',true)
-showdown.setOption('strikethrough',true)
-showdown.setOption('ghCodeBlocks',true)
-showdown.setOption('tasklists',true)
-showdown.setOption('openLinksInNewWindow',true)
+showdown.setOption('parseImgDimensions', true)
+showdown.setOption('strikethrough', true)
+showdown.setOption('ghCodeBlocks', true)
+showdown.setOption('tasklists', true)
+showdown.setOption('openLinksInNewWindow', true)
 var converter = new showdown.Converter()
+var list = function(filenames) {
 
-var list = function(filePaths) {
-    var results = m2j.parse(filePaths, {
-        minify: false,
-        width: 0,
-        outfile: null,
-        content: false,
-    });
-    var obj = JSON.parse(results);
-    var arr = [];
-    for (var key in obj) {
-        var item = obj[key];
-        // 限定list预览的正文的长度为100字
-        const textLen=100
-        item.content=item.content.slice(0,textLen)
-        item.content+='...'
-        arr.push(item);
-    }
-    // 时间倒序排列
-    arr.sort((a,b)=>{
-        return a.date<b.date;
-    })
-    fs.writeFile(`static/posts/list.json`, JSON.stringify(arr));
-};
-var posts = function(filenames) {
-    var filePaths = [];
-    for (var i = 0; i < filenames.length; i++) {
-        var filename = filenames[i];
-        var results = m2j.parse([`posts/${filename}`], {
+}
+
+var post = function(filenames) {
+    let results = [];
+    for (let i = 0; i < filenames.length; i++) {
+        let filename = filenames[i];
+        let result = m2j.parse([`posts/${filename}`], {
             minify: false,
             width: 0,
             outfile: null,
             content: true,
         });
-        results = JSON.parse(results);
-        results = results[filename.replace('.md', '')];
-        // results.content = markdown.toHTML(results.content);
-        results.content=converter.makeHtml(results.content);
-        fs.writeFile(`static/posts/${filename.replace('.md', '.json')}`, JSON.stringify(results));
-        filePaths.push(`posts/${filename}`);
+        result = JSON.parse(result);
+        result = result[filename.replace('.md', '')];
+        results.push(result);
     }
-    return filePaths;
+    results.sort((a, b) => {
+        return a.date < b.date;
+    })
+    for (let i in results) {
+        i = parseInt(i)
+        if (i == 0) {
+            results[i].prev = results[results.length - 1].basename
+        } else {
+            results[i].prev = results[i - 1].basename
+        }
+        if (i == results.length - 1) {
+            results[i].next = results[0].basename
+        } else {
+            results[i].next = results[i + 1].basename
+        }
+        let one = Object.assign({}, results[i])
+        one.content = converter.makeHtml(one.content);
+        fs.writeFile(`static/posts/${one.basename+'.json'}`,
+            JSON.stringify(one));
+    }
+    // 限定list预览的正文的长度为100字
+    // const textLen = 100
+    // for (let i in results) {
+    //     console.log(results[i])
+    //     results[i].content = results[i].content.slice(0, textLen)
+    //     results[i].content += '...'
+    // }
+    //
+    fs.writeFile(`static/posts/list.json`, JSON.stringify(results));
 };
-var create = function(basePath) {
-    var filenames = fs.readdirSync(basePath);
+var create = function() {
+    let filenames = fs.readdirSync('./posts');
     if (!fs.existsSync('static/posts')) {
         fs.mkdirSync('static/posts');
     }
-    var filePaths = posts(filenames);
-    list(filePaths);
+    post(filenames);
 };
-create('./posts');
+create();
 
 module.exports = create;
