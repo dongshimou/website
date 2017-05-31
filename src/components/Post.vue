@@ -10,9 +10,25 @@
     </ul>
     <div class="content" v-html="post.content">
     </div>
-  
+    <div class="quicklink">
+      <!--<router-link :to="{name:'Post',params:{id:post.prev}}">
+          <p style="color:black;">上一篇</p>
+        </router-link>
+        <router-link :to="{name:'Post',params:{id:post.next}}">
+          <p style="color:black;">下一篇</p>
+        </router-link>-->
+      <a href="javascript:void(0);" style="color:black;" @click="linkto(post.prev)">上一篇</a>
+      <a href="javascript:void(0);" style="color:black;" @click="linkto(post.next)">下一篇</a>
+    </div>
   </div>
 </template>
+<style>
+.quicklink {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vh 5vw;
+}
+</style>
 
 <script>
 export default {
@@ -35,16 +51,37 @@ export default {
       this.$http.get(address).then(res => {
         this.post = res.body
         // console.log(res.body)
-        console.log(this.post)
+        // console.log(this.post)
       }, res => {
         // alert("network error");
         // console.log('error',res)
         console.log('get post nerwork error')
       })
+    },
+    linkto(basename) {
+      // console.log('click',basename)
+      this.$router.push(
+        {
+          name: 'Post',
+          params: {
+            id: basename
+          }
+        }
+      )
     }
   },
   created() {
     this.fetchData(this.$route.path)
+  },
+  computed: {
+    router() {
+      return this.$route;
+    }
+  },
+  watch: {
+    router() {
+      this.fetchData(this.$route.path)
+    }
   }
 }
 </script>
@@ -53,14 +90,15 @@ export default {
 #post {
   text-align: center;
   margin: 10vh auto;
+  min-width: 300px;
+  max-width: 60vw;
+  /*max-height: 50vh;*/
 }
 
 
 .content {
-  min-height: 50vh;
   text-align: left;
   margin: 0 auto;
-  width: 60vw;
 }
 
 ul {
@@ -93,6 +131,31 @@ blockquote {
   border-left: 6px solid #b4b4b4;
   padding-left: 10px;
   margin: 5px 0px 5px 20px;
+}
+
+pre {
+  display: block;
+  background-color: rgba(50, 50, 50, 0.4);
+  /*移动端适配 代码块自动换行*/
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre>code {
+  color: yellow !important;
+}
+
+.content a {
+  color: yellow;
+}
+
+.content code {
+  color: orangered;
+}
+
+.content>h1 {
+  border-radius: 5px;
+  box-shadow: 0px 0px 1em #000;
 }
 </style>
 

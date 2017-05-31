@@ -26,7 +26,7 @@ export default new Router({
       component:Home
     },
     {
-      path:'/static/posts/:basename',
+      path:'/static/posts/:id',
       name:'Post',
       component:Post
     },

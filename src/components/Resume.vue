@@ -51,15 +51,6 @@ export default {
 }
 </style>
 <style>
-.content a {
-    color: yellow;
-}
-.content code{
-    color:orangered;
-}
-.content>h1 {
-    border-radius: 5px;
-    box-shadow: 0px 0px 1em #000;
-}
+
 </style>
 
