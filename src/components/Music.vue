@@ -25,7 +25,7 @@ export default {
     },
     created() {
         let address = '/static/music/list.json'
-        console.log(address)
+        // console.log(address)
         this.$http.get(address).then(res => {
             this.list = res.body
             // console.log(this.list)

@@ -41,7 +41,7 @@ export default new Router({
       component:Resume
     },
     {
-      path:'*',
+      path:'/*',
       name:'http404',
       component:Http404
     }
