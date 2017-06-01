@@ -40,6 +40,14 @@ export default {
 
 }
 </script>
+<style lang="scss">
+* {
+  box-sizing: inherit;
+  transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function: ease;
+}
+</style>
 
 <style>
 #home {

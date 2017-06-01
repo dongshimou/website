@@ -8,6 +8,7 @@ import Posts from '@/components/Posts'
 import Post from '@/components/Post'
 import Resume from '@/components/Resume'
 import Http404 from '@/components/Http404'
+import Button from '@/components/Button'
 
 Vue.use(resource)
 Vue.use(Router)
@@ -44,6 +45,11 @@ export default new Router({
       path:'*',
       name:'http404',
       component:Http404
+    },
+    {
+      path:'/test',
+      name:'test',
+      component:Button
     }
   ]
 })
