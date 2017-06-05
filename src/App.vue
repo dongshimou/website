@@ -91,10 +91,12 @@ body {
 }
 
 a {
+  /*取消超链接下划线*/
   text-decoration: none;
 }
 
 *:focus {
+  /*取消选中焦点*/
   outline: none;
 }
 
