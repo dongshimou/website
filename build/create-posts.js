@@ -9,9 +9,6 @@ showdown.setOption('ghCodeBlocks', true)
 showdown.setOption('tasklists', true)
 showdown.setOption('openLinksInNewWindow', true)
 var converter = new showdown.Converter()
-var list = function(filenames) {
-
-}
 
 var post = function(filenames) {
     let results = [];

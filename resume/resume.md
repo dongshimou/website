@@ -54,7 +54,7 @@ tags:
 * 学过网络编程,抓过包,对udp,tcp有了解,socket编程也会.写过web前端和后端,对http也很熟悉.
 * 写过服务器,对并发,以及模块设计有了解,也对web api设计有一定了解.
 * 会c/c++,写过c#,python和javascript.不过写前端的时候用javascript大概是面向Stackoverflow编程.
-* 喜欢`clang++ -std=c++1z`,看过`effective mordern cpp`,翻译过一本短小的gitbook[cpp best practices](http://fuckneusoft.com/topic/11/cpp-best-practices-%E8%AF%91%E6%96%87-%E4%B8%80),看过[c++并发编程](https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details).
+* 喜欢`clang++ -std=c++1z`,看过`effective mordern cpp`,翻译过一本短小的gitbook[cpp best practices](http://bbs.fuckneusoft.com/topic/11/cpp-best-practices-%E8%AF%91%E6%96%87-%E4%B8%80),看过[c++并发编程](https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details).
 * 数据库:sql的用过mysql和sqlserver,nosql的用过mongo,redis
 * 以前做acm的题解写过[csdn](http://blog.csdn.net/dongshimou),后来自己弄了个网站加域名,可惜年费过了忘了付费东西没了.现在弄在我的[github.io](https://dongshimou.github.io)下,暂时还没弄好resume的页面组件,直接贴的content.
 * linux会用,但是并不是很熟练,只是因为科学上网要自己搭建ssserver,某些lib不支持win啊等等
