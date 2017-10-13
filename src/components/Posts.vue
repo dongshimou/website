@@ -75,7 +75,7 @@ export default {
 }
 
 a {
-    color: black;
+    color: #cccccc;
 }
 
 h5,

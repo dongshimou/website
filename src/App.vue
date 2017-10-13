@@ -63,7 +63,9 @@ export default {
 body {
   margin: 0;
   width: 100%;
-  background-image: url('./assets/kunkka-wallpaper-hd.jpg');
+  /* background-image: url('./assets/kunkka-wallpaper-hd.jpg'); */
+  color:#acacac;
+  background-image: url('./assets/kimi-no-na-wa-background.jpg');
   background-clip: border-box;
   background-repeat: no-repeat;
   background-position: center center;
