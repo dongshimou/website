@@ -12,13 +12,13 @@
     </div>
     <div class="quicklink">
       <!--<router-link :to="{name:'Post',params:{id:post.prev}}">
-          <p style="color:black;">上一篇</p>
-        </router-link>
-        <router-link :to="{name:'Post',params:{id:post.next}}">
-          <p style="color:black;">下一篇</p>
-        </router-link>-->
-      <a href="javascript:void(0);" style="color:black;" @click="linkto(post.prev)">上一篇</a>
-      <a href="javascript:void(0);" style="color:black;" @click="linkto(post.next)">下一篇</a>
+            <p style="color:black;">上一篇</p>
+          </router-link>
+          <router-link :to="{name:'Post',params:{id:post.next}}">
+            <p style="color:black;">下一篇</p>
+          </router-link>-->
+      <a href="javascript:void(0);" @click="linkto(post.prev)">上一篇</a>
+      <a href="javascript:void(0);" @click="linkto(post.next)">下一篇</a>
     </div>
   </div>
 </template>
@@ -112,7 +112,7 @@ li {
   margin-right: 5px;
   border-radius: 5px;
   padding: 1px 5px;
-  box-shadow: 0px 0px 1em #000;
+  box-shadow: 0px 0px 1em #aaa;
 }
 
 h1 {
@@ -155,7 +155,11 @@ pre>code {
 
 .content>h1 {
   border-radius: 5px;
-  box-shadow: 0px 0px 1em #000;
+  box-shadow: 0px 0px 1em #fff;
+}
+
+.quicklink>a {
+  color: white;
 }
 </style>
 
