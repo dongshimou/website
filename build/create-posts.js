@@ -21,14 +21,22 @@ var post = function(filenames) {
             content: true,
         });
         result = JSON.parse(result);
-        result = result[filename.replace('.md', '')];
-        results.push(result);
+        let obj = result[filename.replace('.md', '')];
+        results.push(obj);
     }
     results.sort((a, b) => {
-        return a.date < b.date;
+        let ad = a.date;
+        let bd = b.date;
+        if (ad > bd)
+            return -1;
+        else if (ad < bd)
+            return 1;
+        else
+            return 0;
     })
     for (let i in results) {
-        i = parseInt(i)
+        i = parseInt(i);
+        // console.log(results[i].date);
         if (i == 0) {
             results[i].prev = results[results.length - 1].basename
         } else {
