@@ -21,6 +21,7 @@ var post = function(filenames) {
             content: true,
         });
         result = JSON.parse(result);
+        if (filename.indexOf('.md') < 0) continue;
         let obj = result[filename.replace('.md', '')];
         results.push(obj);
     }
@@ -37,6 +38,7 @@ var post = function(filenames) {
     for (let i in results) {
         i = parseInt(i);
         // console.log(results[i].date);
+        console.log(results[i].title);
         if (i == 0) {
             results[i].prev = results[results.length - 1].basename
         } else {
