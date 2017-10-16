@@ -28,17 +28,14 @@ var post = function(filenames) {
     results.sort((a, b) => {
         let ad = a.date;
         let bd = b.date;
-        if (ad > bd)
-            return -1;
-        else if (ad < bd)
-            return 1;
-        else
-            return 0;
+        if (ad > bd) return -1;
+        else if (ad < bd) return 1;
+        else return 0;
     })
     for (let i in results) {
         i = parseInt(i);
         // console.log(results[i].date);
-        console.log(results[i].title);
+        // console.log(results[i].title);
         if (i == 0) {
             results[i].prev = results[results.length - 1].basename
         } else {
