@@ -3,8 +3,8 @@
     <myhead>
       <div class="headclass">
         <!--<router-link class="button-label" :to="{name:'Hello'}">
-            hello
-          </router-link>-->
+              hello
+            </router-link>-->
         <router-link class="button-label" :to="{name:'Home'}">
           home
         </router-link>
@@ -64,8 +64,9 @@ body {
   margin: 0;
   width: 100%;
   /* background-image: url('./assets/kunkka-wallpaper-hd.jpg'); */
-  color:#acacac;
-  background-image: url('./assets/kimi-no-na-wa-background.jpg');
+  color: #CCCCCC;
+  background-image: url('./assets/star-like-dos.png');
+  /* background-image: url('./assets/kimi-no-na-wa-background.jpg'); */
   background-clip: border-box;
   background-repeat: no-repeat;
   background-position: center center;

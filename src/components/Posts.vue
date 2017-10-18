@@ -73,6 +73,9 @@ export default {
     word-break: break-word;
     text-overflow: ellipsis;
 }
+.content:hover{
+    color:#555555
+}
 
 a {
     color: #cccccc;

@@ -10,6 +10,10 @@ import Resume from '@/components/Resume'
 import Http404 from '@/components/Http404'
 import Button from '@/components/Button'
 
+// import N3Components from 'N3-components'
+// import 'N3-components/dist/index.min.css'
+// Vue.use(N3Components)
+
 Vue.use(resource)
 Vue.use(Router)
 

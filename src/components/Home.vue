@@ -11,15 +11,15 @@
                 <p class="label">don't touch me</p>
             </a>
             <!-- <a href="http://sixrevisions.com/css/responsive-background-image/" target="_blank">
-                <p class="label">
-                    study mark
-                </p>
-            </a>
-            <a href="http://www.shejidaren.com/30-css-hover-effects.html" target="_blank">
-                <p class="label">
-                    mouse hover
-                </p>
-            </a> -->
+                    <p class="label">
+                        study mark
+                    </p>
+                </a>
+                <a href="http://www.shejidaren.com/30-css-hover-effects.html" target="_blank">
+                    <p class="label">
+                        mouse hover
+                    </p>
+                </a> -->
         </div>
     </div>
 </template>
@@ -34,18 +34,17 @@ export default {
                 '随笔在posts,简历在about,魔都找工作中...',
                 '<<effective modern c++>>二刷中...'
             ],
-            title: "又是一个无聊的一天"
+            title: "又是一个无聊的一天",
         }
     },
-
 }
 </script>
 <style lang="scss">
 * {
-  box-sizing: inherit;
-  transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
 }
 </style>
 
@@ -62,12 +61,12 @@ export default {
 p {
     font-size: 19px;
     margin: 10px;
-    color:#0EABDE;
+    color: #0EABDE;
 }
 
 .label {
     margin: 5px;
-    color: #ababab;
+    color: #CCCCCC;
     padding: 5px;
     /*border: 1px solid white;*/
     border-radius: 5px;
