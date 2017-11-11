@@ -13,6 +13,7 @@ var converter = new showdown.Converter()
 var resume = function(filenames) {
     for (let i = 0; i < filenames.length; i++) {
         let filename = filenames[i];
+        if(filename.indexOf('.md')<0)continue;
         let results = m2j.parse([`resume/${filename}`], {
             minify: false,
             width: 0,

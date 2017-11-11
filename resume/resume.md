@@ -1,71 +1,89 @@
----
-title: resume
-author: skadi
-date: "2017-01-01 00:00"
-tags:
-  - cpp
-  - javascript
-  - python
-  - csharp
----
+## <i class="fa fa-phone"/> 联系方式</i>
+* 手机：18380404215
+* email：dongshimou@gmail.com
 
-# 个人资料
-* 个人:`董施谋/男/1993`
-* 专业:`本科/网络工程/学士学位`
-* 毕业时间:`2016/成都东软学院`
-* 工作时间:`一年半以上`
-* 邮箱:`dongshimou@gmail.com`
-* 电话:`18380404215`
-* github:[dongshimou](https://github.com/dongshimou)
-* website:[github.io](https://dongshimou.github.io)
-* steam:[dongshimou](http://steamcommunity.com/id/dongshimou/)
-* ~~v2ex:[skadi](https://www.v2ex.com/member/skadi)~~
-* 期望职位:`后端/算法岗/全栈`
-* ~~期望薪资:`12k~15k`~~
+## <i class="fa fa-address-book"/> 个人信息</i>
+* <strong>董施谋</strong>
+* 专业:网络工程/成都东软学院
+* 技术博客: [github.io](http://dongshimou.github.io) or [csdn](http://blog.csdn.net/dongshimou) 
+* github地址: https://github.com/dongshimou/
+* 工作时间: 3年
+* 语言水平: CET-4
 
-# 工作经历
+能够比较流畅的阅读英文文档和相关开发资料.
+使用github,stackoverflow和google
 
-## newegg成都分公司(实习) 2015/11 ~ 2016/04
+## <i class="fa fa-shield"/> 项目与工作经验</i>
+### 天图大数据 --------- 2016/07 ~ 2017/08
 
-### 会议预定系统
-公司内部使用的一个B/S项目,负责后端实现.与其他实习生一起走完一个项目的完整流程:
+<i class="fa fa-life-ring"/>
+<span style="color:green">软件开发工程师</span></i>
 
-包括需求分析,需求评审,数据库设计,架构设计,api设计,code review,测试以及bugfix.
+* 实现股票软件的<span style="color:green">k线图</span>和<span style="color:green">分时图</span>
+* 使用<span style="color:green">vue</span>实现web版本的公司资讯(F10)
+* 使用<span style="color:green">QT</span>实现native组件
+* 封装<span style="color:green">webkit</span>实现高效的webview并接入Qt
+* 实现了一个简单的<span style="color:green">选股语言</span>
+* client与server的<span style="color:green">protocolbuffer</span>对接,以及公司资讯的服务端逻辑
+<br/>
+### 新蛋成都分公司 ----- 2015/06 ~ 2016/06
 
-在项目负责其中一些模块的实现,模拟了outlook会议邮件.在项目中学习了c#的使用,以及web后端的相关知识,restful设计.
+<i class="fa fa-life-ring"/>
+<span style="color:green">.NET后端开发工程师</span></i>
 
-## 天图大数据 2016/07 ~ 2017/08
+* 电商项目的订单模块以及采购模块等进行设计和编写
+* 对公司电商部分老旧代码进行重构,拆分业务逻辑进行分层
+* 对第三方平台的OpenAPI开发,与前端的对接,以及文档的编写和维护
+* 参与开发和维护公司内部相关组件
+* 团队协同工作使用<span style="color:green">MSN</span>与各部门沟通.使用<span style="color:green">git</span>进行版本管理协同开发
+<br/>
+### 学校信息中心 ------- 2014/03 ~ 2015/03
 
-### 项目代号:Carmela
-创业公司,目标是股票交易软件.在项目中负责k线图和分时图的实现,并使用vue实现过F10(公司资讯).
+<i class="fa fa-life-ring"/> 
+<span style="color:green">软件开发工程师</span>(实习)</i>
 
-由于qt的web引擎长时间未更新,载入稍慢(chrome本身无这个问题)于是使用c++封装了webkit重写.
+* 开发学校的网站模块
+* hack了学校的上网客户端,并重写了[rrr](https://github.com/dongshimou/rrr)
+* 参与开发<span style="color:green">车牌识别</span>部分模块
 
-以及实现了选股的一个表达式语言.使用了scintilla去让它高亮和自动补全.负责一部分服务器逻辑.使用`golang`.
+## <i class="fa fa-diamond"/>技能</i>
 
-在项目中继续学习并使用c++,学习了qt.以及web前端框架vue.以及更多的web前端与native前端知识.
+#### 前端
+<strong><span style="color:green">HTML/CSS、Vue、Qt</span></strong>
+* 能够编写语意化的HTML,了解scss,css3,并且熟练查询MDN文档.
+* 使用过大部分<span style="color:green">HTML5/CSS3</span>的新特性
+* 使用<span style="color:green">vue</span>进行开发,对[N3-components](https://github.com/dongshimou/N3-components)贡献了代码
+* 开发了简单的github.io博客系统[simple-blog](https://github.com/dongshimou/simple-blog)
+* 使用<span style="color:green">websocket<span>开发过一个即时聊天系统.[chat](https://github.com/dongshimou/chat)
+* 熟练使用<span style="color:green">Qt</span>开发nqtive前端
 
-# 开源项目
+#### 后端
+<strong><span style="color:green">TCP、.NET、Server、RESTful、SQL、...</span></strong>
+* 使用过<span style="color:green">MVVM</span>模式进行开发过网站后端,并且使用<span style="color:green">REST</span>设计实现一系列接口
+* 使用<span style="color:green">nginx</span>服务器&&<span style="color:green">nodebb</span>搭建论坛
+* 使用<span style="color:green">mysql</span>,<span style="color:green">redis</span>,<span style="color:green">sqllite</span>
+* 使用<span style="color:green">wireshark</span>抓过tcp包,然后hack了学校上网客户端,并模拟重写了它
+* 使用<span style="color:green">golang </span>写过服务器模块,和一些api的测试,但未深度试用过。
 
-* 大学时由于学校的计费客户端限制wifi共享,于是跟同学用c++写了一个console版的,stream socket发80口模拟http.保持在线的token每10s做一次md5再发回去.
-* 在写vue的使用了[N3-components](https://github.com/dongshimou/N3-components),于是给它做了一点微小的贡献.
-* 写过一个tieba的工具,自动签到发帖回帖什么的,然而并没有什么人用~~除了我~~
-* websocket写过一个IM的chat room ~~just a toy~~
-* 一个simple-blog,个人的极简blog系统,由于是放在github.io上的,因为我没有https的service,所以没有与后端的交互.
+#### 其他
+<strong><span style="color:green">C++11、Algorithm、STL、Boost、</span></strong>
+* 大学期间参加过<span style="color:green">acm/icpc</span>算法竞赛
+* 第六届"蓝桥杯"四川省一等奖,全国二等奖
+* 对<span style="color:green">算法</span>很熟悉,对<span style="color:green">STL</span>也很熟悉,使用过一些<span style="color:green">Boost</span>库
+* 自己实现过<span style="color:green">内存池</span>以及<span style="color:green">线程池</span>,实现过<span style="color:green">Signal&&Slot</span>以及<span style="color:green">引用计数</span>和一些<span style="color:green">容器</span>等等
+* 读过<span style="color:green">effective c++</span>和<span style="color:green">effective modern c++</span>,熟悉<span style="color:green">c++11/14</span>
+* 翻译过一本短小的gitbook[cpp best practices](http://bbs.fuckneusoft.com/topic/11/cpp-best-practices-%E8%AF%91%E6%96%87-%E4%B8%80),看过[c++并发编程](https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details)
 
-# 学习经历
-
-* 大学搞过acm竞赛,对算法和数据结构掌握得不错.其他的比赛:第六届"蓝桥杯"c++组省赛一等奖,国家二等奖.
-* 写过游戏~~my 2048~~,学过图形学,对光栅图形学有了解.比如画线,裁切等.
+## <i class="fa fa-rocket"/>综合</i>
+* 以前做了很多onlineJudge的题目,熟悉数据结构及算法。
+* 学过网络编程,对HTTP很熟悉,tcp/udp也用socket发过包
+* 写过c/c++,c#,python以及golang,最熟悉的还是c++
+* 对光栅图形学有一定的了解,如画线,裁切等
 * 学过编译原理,写过json解析器以及公司的选股表达式语言,对parser有一定了解.
-* 学过网络编程,抓过包,对udp,tcp有了解,socket编程也会.写过web前端和后端,对http也很熟悉.
-* 写过服务器,对并发,以及模块设计有了解,也对web api设计有一定了解.
-* 会写网站,比如[我的github.io](dongshimou.github.io),整个的是一个SPA.用的是vue和自己写的一建发布.
-* 会c++,写过c#,python和javascript.不过写前端的时候用javascript大概是面向Stackoverflow编程.
-* 看过`effective c++`,`more effective c++`,`effective mordern c++`,翻译过一本短小的gitbook[cpp best practices](http://bbs.fuckneusoft.com/topic/11/cpp-best-practices-%E8%AF%91%E6%96%87-%E4%B8%80),看过[c++并发编程](https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details).
-* 数据库:sql的用过mysql和sqlserver,nosql的用过mongo,redis
-* 以前做acm的题解写过[csdn](http://blog.csdn.net/dongshimou),后来自己弄了个网站加域名,可惜年费过了忘了付费东西没了.现在弄在我的[github.io](https://dongshimou.github.io)下,暂时还没弄好resume的页面组件,直接贴的content.
-* linux会用,但是并不能说自己用很熟练.
-* 版本管理用过git(~~source tree大法好~~)和svn.
+* 毕业设计实现的是AI框架"行为树"
 
----
+## <i class="fa fa-gamepad"/>其他</i>
+* 空闲之余喜欢打游戏,看动漫,写代码.
+* 喜欢有趣的事情,喜欢挑战.
+* 有自己的一套学习方法,习惯性自我充电,并保持良好的心情。
+* 想做图形或者算法岗的工作
