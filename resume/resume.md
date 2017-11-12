@@ -61,9 +61,9 @@
 <strong><span style="color:green">TCP、.NET、Server、RESTful、SQL、...</span></strong>
 * 使用过<span style="color:green">MVVM</span>模式进行开发过网站后端,并且使用<span style="color:green">REST</span>设计实现一系列接口
 * 使用<span style="color:green">nginx</span>服务器&&<span style="color:green">nodebb</span>搭建论坛
-* 使用<span style="color:green">mysql</span>,<span style="color:green">redis</span>,<span style="color:green">sqllite</span>
+* 用过<span style="color:green">mysql</span>,<span style="color:green">redis</span>,<span style="color:green">sqllite</span>
 * 使用<span style="color:green">wireshark</span>抓过tcp包,然后hack了学校上网客户端,并模拟重写了它
-* 使用<span style="color:green">golang </span>写过服务器模块,和一些api的测试,但未深度试用过。
+* 用过<span style="color:green">golang </span>写过服务器模块,和一些api的测试,但未深度试用过。
 
 #### 其他
 <strong><span style="color:green">C++11、Algorithm、STL、Boost、</span></strong>
